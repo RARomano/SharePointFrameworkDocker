@@ -14,6 +14,9 @@ WORKDIR /usr/src/sharepoint
 RUN npm i -g @microsoft/generator-sharepoint --silent
  
 USER yeoman
- 
-RUN yo @microsoft/sharepoint helloworld webpart helloworld none --component-description "test"
+
+RUN yo @microsoft/sharepoint --solutionName helloworld --componentType webpart --componentName helloworld --framework none --component-description "test"
+
+EXPOSE 5432 4321
+
 WORKDIR /usr/src/sharepoint/helloworld

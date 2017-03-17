@@ -18,6 +18,12 @@ O exemplo de aplicação que utilizarei está descrito aqui: http://dev.office.c
 
 ## Como rodar
 - Após instalar o Docker e clonar esse repositório, abra o PowerShell e vá até a pasta onde o clone foi feito. 
-- Rode o comando `docker build -t SPFxTest .` - A imagem será montada e todos os requisitos serão instalados e configurados. O container que será gerado é linux.
-- Após o término, para se conectar à "VM", rode o comando `docker run -it SPFxTest /bin/bash` 
-- Agora você está conectado na "VM". Pode rodar o comando `ls` e ver toda a estrutura da solução gerada.  
+- Rode o comando `docker build -t spfxtest .` - A imagem será montada e todos os requisitos serão instalados e configurados. 
+> Se tudo deu certo, no final aparecerá a seguinte mensagem:
+
+> ![image](https://cloud.githubusercontent.com/assets/12012898/24055739/061bf5e8-0b20-11e7-99d7-fd6a4bebde96.png) 
+
+- Rode o comando `docker run -p 5432:5432 -p 4321:4321 -it spfxtest gulp serve` 
+- abra o browser na url: https://localhost:5432/workbench
+
+- ![image](https://cloud.githubusercontent.com/assets/12012898/24056327/084c6eea-0b22-11e7-874c-d0e785ba5932.png)
