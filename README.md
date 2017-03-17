@@ -18,7 +18,8 @@ O exemplo de aplicação que utilizarei está descrito aqui: http://dev.office.c
 
 ## Como rodar
 - Após instalar o Docker e clonar esse repositório, abra o PowerShell e vá até a pasta onde o clone foi feito. 
-- Rode o comando `docker build -t spfxtest .` - A imagem será montada e todos os requisitos serão instalados e configurados. 
+- Rode o comando `docker build -t spfxtest .` 
+- A imagem será montada e todos os requisitos serão instalados e configurados. 
 > Se tudo deu certo, no final aparecerá a seguinte mensagem:
 
 > ![image](https://cloud.githubusercontent.com/assets/12012898/24055739/061bf5e8-0b20-11e7-99d7-fd6a4bebde96.png) 
